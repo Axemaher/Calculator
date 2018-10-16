@@ -2,37 +2,55 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Title of the document</title>
 </head>
 
 <body>
+
     <div class="main">
-        <p><span id="lastNumbers"></span><span id="lastCalc"></span></p>
-        <!-- <p id="lastNumbers"></p>
-        <p id="lastCalc"></p> -->
-        <input class="inp" id="inp" type="text"><br>
-        <button class="btn btnNumber" data-num="7">7</button>
-        <button class="btn btnNumber" data-num="8">8</button>
-        <button class="btn btnNumber" data-num="9">9</button>
-        <button class="btn btnNumber" data-num=" / ">/</button><br>
-        <button class="btn btnNumber" data-num="4">4</button>
-        <button class="btn btnNumber" data-num="5">5</button>
-        <button class="btn btnNumber" data-num="6">6</button>
-        <button class="btn btnNumber" data-num=" * ">*</button><br>
-        <button class="btn btnNumber" data-num="1">1</button>
-        <button class="btn btnNumber" data-num="2">2</button>
-        <button class="btn btnNumber" data-num="3">3</button>
-        <button class="btn btnNumber" data-num=" - ">-</button><br>
-        <button class="btn" id="btnReset">C</button>
-        <button class="btn btnNumber" data-num="0">0</button>
-        <button class="btn btnNumber" data-num=".">.</button>
-        <button class="btn btnNumber" data-num=" + ">+</button><br>
-        <button class="btn" id="btnCalc">=</button>
+        <div class="history">
+            <div>
+                <p class="score" id="score"></p>
+                <br><br>
+                <p class="numbers" id="lastNumbers">&nbsp</p>
+                <p class="history-label"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1" id="Capa_1" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 97.16 97.16"
+                        style="enable-background:new 0 0 97.16 97.16;" xml:space="preserve">
+                        <path d="M48.58,0C21.793,0,0,21.793,0,48.58s21.793,48.58,48.58,48.58s48.58-21.793,48.58-48.58S75.367,0,48.58,0z M48.58,86.823    c-21.087,0-38.244-17.155-38.244-38.243S27.493,10.337,48.58,10.337S86.824,27.492,86.824,48.58S69.667,86.823,48.58,86.823z"
+                            fill="#FFFFFF" />
+                        <path d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"
+                            fill="#FFFFFF" />
+                    </svg> HISTORY</p>
+                <div class="historyList" id="historyList" style="overflow: auto;">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="calc">
+            <div class="btn" id="reset">C</div>
+            <div class="btn" data-num="">+/-</div>
+            <div class="btn btnCalc" data-num="**">^</div>
+            <div class="btn division btnCalc" data-num="/">/</div>
+            <div class="btn btnCalc" data-num="1">1</div>
+            <div class="btn btnCalc" data-num="2">2</div>
+            <div class="btn btnCalc" data-num="3">3</div>
+            <div class="btn btnCalc" data-num=" * ">X</div>
+            <div class="btn btnCalc" data-num="4">4</div>
+            <div class="btn btnCalc" data-num="5"> 5</div>
+            <div class="btn btnCalc" data-num="6">6</div>
+            <div class="btn btnCalc" data-num=" - ">-</div>
+            <div class="btn btnCalc" data-num="7">7</div>
+            <div class="btn btnCalc" data-num="8">8</div>
+            <div class="btn btnCalc" data-num="9">9</div>
+            <div class="btn btnCalc" data-num=" + ">+</div>
+            <div class="btn zero btnCalc" data-num="0">0</div>
+            <div class="btn btnCalc" data-num=".">.</div>
+            <div class="btn equal" id="calc">=</div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

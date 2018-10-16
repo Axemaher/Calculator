@@ -1,13 +1,159 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
 .main {
-    width: 200px;
+    display: flex;
+    margin: 40px;
+}
+
+.calc {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.history,
+.history div {
+    width: 300px;
+    height: 375px;
+    background-color: #0087f3;
+}
+
+.history {
+    position: relative;
+    border-radius: 7px 0 0 7px;
+
+}
+
+.history div {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    background-color: #253b49;
+    border-radius: 7px;
 }
 
 .btn {
-    width: 45px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    -webkit-box-shadow: inset 0px 0px 1px 0px rgba(194, 194, 194, 1);
+    -moz-box-shadow: inset 0px 0px 1px 0px rgba(194, 194, 194, 1);
+    box-shadow: inset 0px 0px 1px 0px rgba(194, 194, 194, 1);
+    -webkit-transition: 0.2s;
+    /* Safari */
+    transition: 0.2s;
 }
 
-.inp {
-    width: 200px;
-    height: 50px;
+.btn:hover {
+    -webkit-box-shadow: inset 0px 0px 12px 0px rgba(212, 212, 212, 1);
+    -moz-box-shadow: inset 0px 0px 12px 0px rgba(212, 212, 212, 1);
+    box-shadow: inset 0px 0px 12px 0px rgba(212, 212, 212, 1);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.zero {
+    width: 150px;
+}
+
+.equal {
+    background-color: #0087f3;
+    border-radius: 0 0 7px;
+}
+
+.division {
+    border-radius: 0 7px;
+}
+
+.history {
+    color: white;
+    position: relative;
+}
+
+.score {
+    position: absolute;
+    font-size: 30px;
+    text-align: right;
+    top: -23px;
+    left: 10px;
+    width: 280px;
+
+}
+
+.numbers {
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: right;
+
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(63, 63, 63, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(63, 63, 63, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(63, 63, 63, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#3f3f3f', GradientType=1);
+    /* IE6-9 */
+    padding: 8px 17px 8px;
+    margin-top: 5px;
+}
+
+.history-label {
+    font-size: 14px;
+    text-align: left;
+    padding: 10px 0 25px 27px;
+}
+
+.history div div {
+    height: 220px;
+    width: 295px;
+    position: relative;
+    margin-left: 20px;
+    border-radius: 0;
+}
+
+.historyRow {
+    display: flex;
+    justify-content: space-between;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,3f3f3f+100&0+0,1+100 */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(63, 63, 63, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(63, 63, 63, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(63, 63, 63, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#3f3f3f', GradientType=1);
+    margin-bottom: 2px;
+}
+
+.historyList p {
+    font-size: 14px;
+    padding: 8px 17px 8px;
+    margin: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #424a55;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0087f3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.resultHistory {
+    font-size: 14px;
 }
